@@ -1,0 +1,5 @@
+To develop:
+1. desktop view
+2. Phone view
+2. App dev 
+

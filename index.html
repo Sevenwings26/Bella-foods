@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bello Olonje</title>
+    <link rel="stylesheet" href="./Assets/CSS/index.css">
+    <link rel="stylesheet" href="./Assets/CSS/indexmedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./Assets/Images/logo.png" alt="">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li onclick="open()"><a href="#" id="login-view">Login</a></li>
+                    <li class="sign-up"><a href="#" style="color: #FA4A0C;">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="togg-div">
+                <label for="menu-toggle" class="hamburger" onclick="toggle()">&#9776;</label>
+            </div>
+
+            <div class="nav-links2" id="togg-display">
+
+                <p id="cancel" onclick="cancel()">&times;</p>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li class="sign-up"><a href="#" style="color: #FA4A0C;">Sign up</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="id-container">
+            <div class="container-one">
+                <div class="inner-container-one">
+                    <div class="food-div">
+                        <p>Food app</p>
+                    </div>
+
+                    <div class="text-hungry">
+                        <p>Why stay hungry when you can order from Bella Olonje</p>
+                    </div>
+
+                    <div class="text-download">
+                        <p>Download the Bella Olonje's food app now on</p>
+                    </div>
+
+                    <div class="btn-download">
+                        <button class="btn-playstore">Playstore</button> <br> <br>
+                        <button class="btn-appstore">App store</button>
+                    </div>
+
+                    <div class="phone-container">
+                        <img src="./Assets/Images/bg-phone-food.png" alt="">
+                    </div>
+                    <div class="how-app-works">
+                        <a href="#">How the app works</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="phone-view">
+                <div class="container-two">
+                    <div class="create-acc">
+                        <a href="#">Create an account</a>
+                    </div>
+
+                    <div class="text-create">
+                        <p>Create/login to an existing account to get started</p>
+                    </div>
+
+                    <div class="img-phone">
+                        <img src="./Assets/Images/login-view-phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- desktop-view  -->
+            <div class="desktop-view">
+                <div class="img-phone">
+                    <img src="./Assets/Images/login-view-phone.png" alt="">
+                </div>
+
+                <div class="create-acc">
+                    <a href="#">Create an account</a>
+
+                    <p>Create/login to an existing account to get started</p>
+                </div>
+            </div>
+
+            <!-- login modal  -->
+
+            <div class="login-modal">
+                <form action="Get">
+                    <div class="logo">
+
+                    </div>
+                    <div class="input-box">
+                        <label for="username">Email address </label> <br>
+                        <input type="email" name="email" id="email">
+
+                        <br> <br> <br>
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="#">Forgot passcode?</a>
+                    </div>
+
+                    <div class="btn-btn-login">
+                        <button class="btn-login" type="button">Login</button>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./Assets/JS/scripts.js"></script>
+</body>
+
+</html>
