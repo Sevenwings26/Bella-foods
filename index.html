@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./Assets/CSS/indexmedia.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,8 +25,8 @@
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Faq</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li onclick="open()"><a href="#" id="login-view">Login</a></li>
-                    <li class="sign-up"><a href="#" style="color: #FA4A0C;">Sign up</a></li>
+                    <li><button id="loginBtn">Login</button></li>
+                    <li><button id="SignBtn">Sign up</button></li>
                 </ul>
             </div>
             <div class="togg-div">
@@ -36,21 +34,20 @@
             </div>
 
             <div class="nav-links2" id="togg-display">
-
                 <p id="cancel" onclick="cancel()">&times;</p>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Faq</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li class="sign-up"><a href="#" style="color: #FA4A0C;">Sign up</a></li>
+                    <li><button id="loginBtnMobile">Login</button></li>
+                    <li><button id="SignBtnMobile">Sign up</button></li>
                 </ul>
             </div>
-
         </nav>
     </header>
 
+    <!-- site body  -->
     <main>
         <div class="container" id="id-container">
             <div class="container-one">
@@ -78,7 +75,6 @@
                     <div class="how-app-works">
                         <a href="#">How the app works</a>
                     </div>
-
                 </div>
             </div>
 
@@ -112,41 +108,36 @@
                     <p>Create/login to an existing account to get started</p>
                 </div>
             </div>
-
-            <!-- login modal  -->
-
-            <div class="login-modal">
-                <form action="Get">
-                    <div class="logo">
-
-                    </div>
-                    <div class="input-box">
-                        <label for="username">Email address </label> <br>
-                        <input type="email" name="email" id="email">
-
-                        <br> <br> <br>
-                        <label for="password">Password</label>
-                        <br>
-                        <input type="password" name="password" id="password">
-                    </div>
-
-                    <div class="forgot-password">
-                        <a href="#">Forgot passcode?</a>
-                    </div>
-
-                    <div class="btn-btn-login">
-                        <button class="btn-login" type="button">Login</button>
-                    </div>
-
-
-
-
-                </form>
-            </div>
-
         </div>
     </main>
 
+    <!-- login Modal  -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <div class="modal-header">
+                <h2>Login</h2>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="input-div">
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="btn-div">
+                        <button type="submit" class="btn-login">Login</button>
+                    </div>
+                    <div class="or-div">
+                        <p>or</p>
+                    </div>
+                    <div class="social-div">
+                        <button class="btn-google">Login with Google</button>
+                        <button class="btn-fb">Login with Facebook</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="./Assets/JS/scripts.js"></script>
 </body>

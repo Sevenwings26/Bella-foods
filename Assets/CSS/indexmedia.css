@@ -1,4 +1,3 @@
-
 @media screen and (min-width:319px) {
     header {
         width: 100%;
@@ -83,21 +82,27 @@
         font-size: 20px;
     }
 
-    .sign-up {
+
+    li button {
+        padding: 15px;
+        background-color: transparent;
+        color: #FA4A0C;
         border: 1px solid #FA4A0C;
-        width: 20%;
-        padding: 10px;
+        cursor: pointer;
         border-radius: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
+    }
+
+    li button:hover {
+        background-color: #FA4A0C;
+        color: white;
+        border: none;
     }
 
     /* main  */
     main .container-one {
         width: 100%;
         background-color: #FAFAFA;
-
     }
 
     .food-div {
@@ -192,6 +197,7 @@
         padding: 30px;
         border: 1px dotted red;
     }
+
     .container-two .create-acc a {
         text-decoration: none;
         color: #FA4A0C;
@@ -200,6 +206,7 @@
     .container-two .create-acc a:hover {
         color: #362e2b;
     }
+
     .container-two .text-create {
         margin: auto;
         padding: 30px;
@@ -209,12 +216,13 @@
     .container-two .text-create p {
         font-size: 30px;
     }
+
     .container-two .img-phone {
         padding: 20px;
 
     }
 
-    .container-two .img-phone img{
+    .container-two .img-phone img {
         object-fit: cover;
     }
 
@@ -222,68 +230,80 @@
     .desktop-view {
         display: none;
     }
-    /* login modal styling  */
-    .login-modal form{
-        margin: auto;
+
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
         width: 80%;
-        height: 95vh;
-        background-color:  #d7cccc;
+        max-width: 400px;
         border-radius: 20px;
     }
-    form .logo{
-        width: 100%;
-        height: 10rem;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background-color: rgb(176, 168, 168);
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
     }
 
-    form .input-box {
-        padding: 35px;
-        /* background-color:; */
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
     }
 
-    form .input-box label {
-        font-size: 12px;
+    /* Form styles */
+    form {
+        display: flex;
+        flex-direction: column;
     }
 
-    form .input-box input {
-        width: 100%;
-        background-color: transparent;
-        border-bottom: 1px solid #070504;
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 8px;
+        margin-bottom: 10px;
         border-top: none;
         border-left: none;
         border-right: none;
     }
 
+    .forgot-password{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
     .forgot-password a{
         text-decoration: none;
         color: #FA4A0C;
-        padding-left: 30px;
-        font-size: 14px;
     }
 
-    .btn-btn-login {
-        width: 100%;
-        height: 10rem;
-        border: 1px solid #6b1515;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    .btn-login {
-        padding: 15px;
-        border-radius: 20px;
-        border: none;
-        width: 70%;
+    .loginSubmit {
+        padding: 10px;
         background-color: #FA4A0C;
-        color: #FAFAFA;
+        border: none;
+        border-radius: 20px;
+
     }
 
-    .login-modal {
-        display: none;
-    }
 }
 
 
@@ -291,6 +311,12 @@
 @media screen and (min-width:756px) {
     .togg-div {
         display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
 
     header nav .logo-container {
@@ -309,7 +335,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    } 
+    }
 
     /* main  */
     main .container-one {
@@ -422,31 +448,36 @@
         margin-top: 30px;
         display: none;
     }
-    .phone-view{
-        display:none;
+
+    .phone-view {
+        display: none;
     }
 
     .desktop-view {
         margin-top: 30px;
-        display:flex;
-        padding:50px;
+        display: flex;
+        padding: 50px;
         align-items: center;
     }
+
     .desktop-view .img-phone {
         width: 40%;
         display: flex;
         /* align-items: center; */
         justify-content: center;
     }
-    .create-acc{
+
+    .create-acc {
         padding-left: 40px;
         width: 60%;
     }
+
     .create-acc a {
         text-decoration: none;
         color: #FA4A0C;
         font-size: 14px;
     }
+
     .create-acc p {
         font-size: 20px;
         padding-top: 15px;
@@ -489,7 +520,7 @@
         padding-left: 5rem;
         margin-bottom: 2rem;
     }
-    
+
     .how-app-works {
         padding: 50px;
         margin-top: 120px;
