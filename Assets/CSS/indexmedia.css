@@ -270,17 +270,19 @@
 
     /* Form styles */
     form {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        /* flex-direction: column; */
     }
 
     label {
-        margin-bottom: 5px;
+        margin-bottom: 1px;
+        margin-top: 20px;
     }
 
     input {
         padding: 8px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        width: 100%;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -296,14 +298,35 @@
         color: #FA4A0C;
     }
 
-    .loginSubmit {
+    .btn-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-login {
         padding: 10px;
         background-color: #FA4A0C;
         border: none;
         border-radius: 20px;
-
+        color: white;
+        width: 70%;
     }
 
+    .social-div {
+        width: 100%;
+        display: block;
+        align-items: center;
+    }
+
+    .social-div button {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid  #FA4A0C;
+        border-radius: 20px;
+        color: #FA4A0C;
+        width: 70%;
+    }
 }
 
 
