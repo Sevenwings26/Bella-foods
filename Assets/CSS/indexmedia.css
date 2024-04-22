@@ -37,21 +37,32 @@
         width: 70%;
     }
 
+
+
     .nav-links2 {
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.204);
         display: none;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 1px 1px 0px 0px rgba(194, 186, 186, 0.594);
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
         top: 0;
-        width: 0;
+        left: 0;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 1px 0px 0px rgba(194, 186, 186, 0.594);
+    }
+
+    .cancel-div {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fefefe;
     }
 
     .nav-links2 ul {
-        background-color: white;
-        height: 100vh;
-        width: 50%;
+        /* height: 100vh; */
+        width: 60%;
         top: 0;
         display: block;
         border: none;
@@ -62,7 +73,6 @@
         list-style-type: none;
         height: 2rem;
         width: 80%;
-        border-bottom: 1px solid #ccc;
         text-align: left;
         padding: 15px;
         margin-bottom: 20px;
@@ -75,22 +85,23 @@
         text-decoration: none;
     }
 
+
     #cancel {
-        position: absolute;
-        left: 120px;
-        border: none;
-        font-size: 20px;
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
     }
 
 
     li button {
-        padding: 15px;
         background-color: transparent;
         color: #FA4A0C;
         border: 1px solid #FA4A0C;
         cursor: pointer;
         border-radius: 30px;
         width: 100%;
+        padding: 15px;
     }
 
     li button:hover {
@@ -98,6 +109,109 @@
         color: white;
         border: none;
     }
+
+
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 20px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Form styles */
+    form {
+        text-align: center;
+        display: block;
+    }
+
+    .input-div {
+        text-align: left;
+    }
+
+    input {
+        padding: 8px;
+        /* margin-bottom: 10px; */
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .forgot-password{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .forgot-password a{
+        text-decoration: none;
+        color: #FA4A0C;
+    }
+
+    .btn-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-login {
+        padding: 10px;
+        background-color: #FA4A0C;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        width: 70%;
+    }
+
+    .or-div{
+        padding: 20px;
+    }
+
+    .social-div {
+        width: 100%;
+        display: block;
+        align-items: center;
+    }
+
+    .social-div button {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid  #FA4A0C;
+        border-radius: 20px;
+        color: #FA4A0C;
+        width: 70%;
+    }
+
 
     /* main  */
     main .container-one {
@@ -231,102 +345,6 @@
         display: none;
     }
 
-    /* Modal styles */
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 10% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 400px;
-        border-radius: 20px;
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    /* Form styles */
-    form {
-        display: block;
-        /* flex-direction: column; */
-    }
-
-    label {
-        margin-bottom: 1px;
-        margin-top: 20px;
-    }
-
-    input {
-        padding: 8px;
-        /* margin-bottom: 10px; */
-        width: 100%;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-    }
-
-    .forgot-password{
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-
-    .forgot-password a{
-        text-decoration: none;
-        color: #FA4A0C;
-    }
-
-    .btn-div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .btn-login {
-        padding: 10px;
-        background-color: #FA4A0C;
-        border: none;
-        border-radius: 20px;
-        color: white;
-        width: 70%;
-    }
-
-    .social-div {
-        width: 100%;
-        display: block;
-        align-items: center;
-    }
-
-    .social-div button {
-        padding: 10px;
-        background-color: transparent;
-        border: 1px solid  #FA4A0C;
-        border-radius: 20px;
-        color: #FA4A0C;
-        width: 70%;
-    }
 }
 
 
