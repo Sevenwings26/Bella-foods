@@ -4,10 +4,11 @@
 const loginBtn = document.getElementById("loginBtn");
 const SignBtn = document.getElementById("SignBtn");
 
-// ScallScreen 
+// SmallScreen 
 const loginBtnMobile = document.getElementById("loginBtnMobile");
 const SignBtnMobile = document.getElementById("SignBtnMobile");
 
+// modal - login & sign up
 const modal = document.getElementById("modal");
 const modalSignUp = document.getElementById("modal-sign");
 
